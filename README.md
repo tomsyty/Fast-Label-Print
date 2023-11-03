@@ -27,11 +27,12 @@ Skrypt do działania wymaga kilku darmowych narzędzi znanych i wypróbowanych w
 3. Uruchom plik "script.ahk". Przy pierwszym uruchomieniu zostanie otwarte okno z informacjami o programie oraz instrukcją instalacji. Po jego zamknięciu należy wskazać tryb działania programu: tylko drukowanie etykiet lub drukowanie z autowykrywaniem i modyfikacją etykiet przesyłek eCommerce Poczty Polskiej.
    W kolejnych krokach ustawisz:
    - skrót klawiaturowy aktywujący wydruk<br/>
-     ![shortcut_keys_selection](https://github.com/tomsyty/Fast-Label-Print/assets/41838854/dffbde6d-c709-4df5-8e6b-9cdcba565d2f)
+     ![shortcut_keys_selection](https://github.com/tomsyty/Fast-Label-Print/assets/41838854/62ef1db0-4176-44f7-b9ab-3c91d2e2ee1e)
+
    - folder pobieranych etykiet: folder do którego przeglądarka zapisuje etykiety żeby program wiedział gdzie ich szukać
    - ścieżka do programu SumatraPDF: program wymagany jest do wydruku etykiet więc musi być zainstalowany, inaczej jego działanie mija się z celem
    - drukarka która jest używana do wydruku etykiet<br/>
-     ![select_printer](https://github.com/tomsyty/Fast-Label-Print/assets/41838854/87101f87-0a15-431e-a9b3-c283cf779274)
+     ![select_printer](https://github.com/tomsyty/Fast-Label-Print/assets/41838854/641a4c29-87c4-4f33-9ce4-8cfa5486dba4)
 
     oraz jeśli chcesz wykorzystywać program do modyfikacji etykiet adresowych Poczty Polskiej musisz ustawić opcje:
    - ścieżka do programu Ghostscript
@@ -40,12 +41,13 @@ Skrypt do działania wymaga kilku darmowych narzędzi znanych i wypróbowanych w
 
     Aby uruchamiać program przy włączeniu systemu zaznacz opcję "Uruchamiaj automatycznie przy starcie systemu" (działa ona dla aktualnie zalogowanego użytkownia).
 4. W dowolnym momencie możesz zmienić ustawienia klikając prawym przyciskiem myszy ikonę programu AutoHotkey i wybierając "Ustawienia"<br/>
-   ![settings](https://github.com/tomsyty/Fast-Label-Print/assets/41838854/e3591e39-d8ce-41a1-b97b-e62de1db13da)
+   ![settings](https://github.com/tomsyty/Fast-Label-Print/assets/41838854/8da8b71d-3f6a-4193-8eab-91c0c2a41135)
+
 
 To już wszystko. Skrypt po wciśnięciu zdefiniowanego skrótu klawiaturowego wyszuka w folderze pobieranych plików wszystkie etykiety .pdf zawierającej w nazwie pliku datę w formacie YYYY-MM-DD_HH-MM-SS, a więc zarówno te które zawierają przedrostek "label-" (lub "labels-") jak i bez niego (etykietę na Allegro można pobrać w kilku miejscach, w zależności od tego miejsca nazwa pliku zawiera przedrostek lub nie). **Przed pierwszym uruchomieniem usuń wszystkie pobrane wcześniej etykiety przechowywane bezpośrednio w tym folderze aby uniknąć niepotrzebnego ich wydruku.**
 
 Przetwarzanie etykiet eCommerce Poczty Polskiej mozliwe jest tylko gdy plik zawiera jedną etykietę. Jeśli potrzebujesz przetwarzać tego typu etykiety, drukuj je pojedynczo. W przypadku gdy skrypt wykryje plik zawierajacy więcej niż jedną etykietę i włączony jest tryb pracy programu z przetwarzaniem etykiet eCommerce, poinformuje o braku możliwości jej ewentualnego przetworzenia i zapyta czy chcesz wydrukować ją tak jak jest (to może być plik zawierający inne etykiety)<br/>
-![multiple_labels_question](https://github.com/tomsyty/Fast-Label-Print/assets/41838854/a61573e7-457a-47b7-968c-b800e1124059)<br/>
+![multiple_labels_question](https://github.com/tomsyty/Fast-Label-Print/assets/41838854/e2d9af7c-7e58-4547-8a4f-c368cc6c732a)<br/>
 Gdy masz wyłączony tryb przetwarzania etykiet eCommerce, takiego pytania nie będzie, wydrukuje plik bez pytania.
 
 
