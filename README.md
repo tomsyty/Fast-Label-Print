@@ -39,7 +39,7 @@ Skrypt do działania wymaga kilku darmowych narzędzi znanych i wypróbowanych w
    - ścieżka do programu ImageMagick
    - włączyć opcję "Modyfikuj etykiety Poczty Polskiej"
 
-    Aby uruchamiać program przy włączeniu systemu zaznacz opcję "Uruchamiaj automatycznie przy starcie systemu" (działa ona dla aktualnie zalogowanego użytkownia).
+    Aby uruchamiać program przy włączeniu systemu zaznacz opcję "Uruchamiaj automatycznie przy starcie systemu" (działa ona dla aktualnie zalogowanego użytkownika).
 4. W dowolnym momencie możesz zmienić ustawienia klikając prawym przyciskiem myszy ikonę programu AutoHotkey i wybierając "Ustawienia"<br/>
    ![settings](https://github.com/tomsyty/Fast-Label-Print/assets/41838854/8da8b71d-3f6a-4193-8eab-91c0c2a41135)
 
